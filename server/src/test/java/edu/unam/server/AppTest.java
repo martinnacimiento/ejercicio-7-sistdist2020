@@ -1,4 +1,4 @@
-package edu.unam.app;
+package edu.unam.server;
 
 import static org.junit.Assert.assertTrue;
 

@@ -1,5 +1,5 @@
 {
-	"name": "Java Sample",
+	"name": "Ejercicio7-TP-Tiempo",
 	"dockerFile": "Dockerfile",
 
 	// Set *default* container specific settings.json values on container create.

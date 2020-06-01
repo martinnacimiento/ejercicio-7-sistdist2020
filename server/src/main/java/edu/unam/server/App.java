@@ -1,4 +1,4 @@
-package edu.unam.app;
+package edu.unam.server;
 
 /**
  * Hello world!
