@@ -4,11 +4,11 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>edu.unam.server</groupId>
-  <artifactId>server</artifactId>
+  <groupId>edu.unam.client</groupId>
+  <artifactId>client</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>server</name>
+  <name>client</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -27,20 +27,19 @@
     </dependency>
     <!-- https://mvnrepository.com/artifact/org.apache.thrift/libthrift -->
     <dependency>
-        <groupId>org.apache.thrift</groupId>
-        <artifactId>libthrift</artifactId>
-        <version>0.12.0</version>
+      <groupId>org.apache.thrift</groupId>
+      <artifactId>libthrift</artifactId>
+      <version>0.12.0</version>
     </dependency>
     <dependency>
       <groupId>javax.annotation</groupId>
       <artifactId>javax.annotation-api</artifactId>
       <version>1.3.2</version>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
     <dependency>
       <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-simple</artifactId>
-      <version>2.0.0-alpha1</version>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>1.7.5</version>
     </dependency>
   </dependencies>
 
@@ -92,7 +91,7 @@
               <manifest>
                 <addClasspath>true</addClasspath>
                 <classpathPrefix>libs/</classpathPrefix>
-                <mainClass>edu.unam.server.App</mainClass>
+                <mainClass>edu.unam.client.App</mainClass>
               </manifest>
             </archive>
           </configuration>

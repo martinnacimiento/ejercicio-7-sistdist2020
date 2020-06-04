@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - App",
+      "request": "launch",
+      "mainClass": "edu.unam.client.App",
+      "projectName": "client"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - App",
+      "request": "launch",
+      "mainClass": "edu.unam.server.App",
+      "projectName": "server"
+    },
+    {
+      "type": "java",
       "name": "App",
       "request": "launch",
       "mainClass": "edu.unam.app.App",

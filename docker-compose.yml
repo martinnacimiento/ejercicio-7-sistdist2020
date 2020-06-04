@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  client:
+    image: maven:3.6.3-openjdk-15
+    depends_on:
+      - server
+    entrypoint: ["java", "-jar", "/my_client/client-1.0-SNAPSHOT.jar"]
+    networks:
+      - ejercicio7-red-g6
+    volumes:
+      - ./client/target:/my_client/
+  server:
+    image: maven:3.6.3-openjdk-15
+    container_name: server_7_thrift
+    entrypoint: ["java", "-jar", "/my_server/server-1.0-SNAPSHOT.jar"]
+    volumes:
+      - ./server/target:/my_server/
+    networks:
+      - ejercicio7-red-g6
+networks:
+  ejercicio7-red-g6:
+    driver: bridge
